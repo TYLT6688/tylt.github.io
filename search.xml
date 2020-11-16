@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>计算机基础知识点</title>
+    <url>/2020/03/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%82%B9/</url>
+    <content><![CDATA[<h2 id="计算机基础知识"><a href="#计算机基础知识" class="headerlink" title="计算机基础知识"></a>计算机基础知识</h2><h3 id="信息与数据"><a href="#信息与数据" class="headerlink" title="信息与数据"></a>信息与数据</h3><a id="more"></a>
+
+<p>信息社会三大资源：信息、物质、能源</p>
+<p>信息论的创始人：美国数学家<strong>香农</strong></p>
+<p>控制论的创始人：美国数学家<strong>维纳</strong></p>
+<p>信息的功能是==消除事物的不确定性，把不确定性变成确定性。==</p>
+<p>信息安全所面临的威胁是==自然威胁==和==人为威胁==。</p>
+<p>信息安全的四大要素：==技术，制度，流程，人==</p>
+<p>电子政务安全一个基础（==法律制度==）两个支柱（==技术和管理==）。</p>
+<p>现代信息技术的主导技术：传感技术，计算机技术，通信技术，网络技术</p>
+<p>计算机是一种==信息处理机（IPO）==</p>
+<p>信息高速公路（NII）由美国提出</p>
+<p>国际标准化组织将==信息安全==定义为信息的<strong>完整性、可用性、保密性和可靠性</strong></p>
+<h5 id="信息可以用不同形式的数据表示"><a href="#信息可以用不同形式的数据表示" class="headerlink" title="信息可以用不同形式的数据表示"></a>信息可以用不同形式的数据表示</h5><ul>
+<li>信息是对数据进行加工后的结果，信息的符号化就是数据，是数据的逻辑意义</li>
+<li>数据是信息的载体，是信息的具体表现形式，是信息的物理表示</li>
+</ul>
+<p>信息社会也称信息化社会，是脱离工业化社会以后，信息将起主要作用的社会。所谓<strong>信息社会</strong>，是以<strong>电子信息技术为基础</strong>，以<strong>信息资源为基本发展资源</strong>，以<strong>信息服务性产业为基本社会产业</strong>，以<strong>数字化和网络化为基本社会交往方式</strong>的新型社会。</p>
+<p>表示数制的符号称为==数码==</p>
+<p><strong>二进制（Binary System）</strong></p>
+<p><strong>八进制（Octal System）</strong></p>
+<p><strong>十进制（Decimal System）</strong></p>
+<p><strong>十六进制（Hexadecimal System）</strong></p>
+<p>8位无符号二进制数表示的十进制范围<strong>0~255</strong></p>
+<p>ASCII码是一种西文机内码，有7位ASCII码和8位ASCII码两种，7位ASCII码称为标准ASCII码，8位ASCII码称为扩展ASCII码。7位标准ASCII码用==一个字节==（8位）表示一个字符，并规定其==最高位为0==，实际只用到7位，因此可表示128个不同字符。同一字母的ASCII码小写比大写大32，16进制的话就是20H，也就是小写字母的顺序在大写字母之后。</p>
+<p>多国语言支持的Unicode字符集，是一种16位字符编码标准（一个字符用十六位二进制数表示两个字节）包含ASCII字符集（7位二进制表示，最多可以表示128个字符）。</p>
+<p><strong>汉字交换码：</strong>汉字输入到计算机进行识别和处理的汉字编码，简称<strong>国标码</strong>，必须使用1980年颁布的GB2312。</p>
+<p><strong>汉字机内码：</strong>计算机内处理汉字信息的汉字代码，为了区分与ASCII码的区别，将交换码的两个字节的最高二进制改为1获得。</p>
+<p><strong>汉字字形码：</strong>汉字显示时使用的图形数据的编码，分为点阵法与矢量法。</p>
+<p><strong>汉字输入码：</strong>拼音码，字形码（字形点阵信息，存在汉字库中），音形码，流水码。</p>
+<p>区位码是区码和位码分别转换成十六进制数后，分别加上20H变为国标码，再分别加上80H变成机内码</p>
+<p>密码信息称为==密钥==，加密和解密过程使用的密钥分别称为加密密钥和解密密钥。</p>
+<h3 id="计算机文化"><a href="#计算机文化" class="headerlink" title="计算机文化"></a>计算机文化</h3><p>计算机文化以计算机为核心，集网络文化、信息文化、多媒体文化于一体。</p>
+<ul>
+<li>出现在<strong>20世纪80年代初</strong></li>
+<li>在<strong>瑞士洛桑</strong>召开的<strong>第三次世界计算机教育大会</strong>上</li>
+</ul>
+<p>文化的核心：<strong>观念</strong>和<strong>价值</strong><br>基本属性：广泛性、传递性、教育性、深刻性</p>
+<h3 id="计算机应用"><a href="#计算机应用" class="headerlink" title="计算机应用"></a>计算机应用</h3><ol>
+<li>科学计算</li>
+<li>信息管理</li>
+<li>过程控制</li>
+<li>计算机辅助系统<ul>
+<li>计算机辅助设计（CAD）</li>
+<li>计算机辅助制造（CAM）</li>
+<li>计算机辅助测试（CAT）</li>
+<li>计算机辅助教学（CAI）</li>
+<li>计算机辅助教育（CBE）</li>
+<li>计算机管理教学（CMI）</li>
+<li>计算机集成制造系统（CIMS）</li>
+</ul>
+</li>
+<li>人工智能</li>
+<li>计算机网络与通信</li>
+</ol>
+<h5 id="计算机的发展趋势："><a href="#计算机的发展趋势：" class="headerlink" title="计算机的发展趋势："></a>计算机的发展趋势：</h5><p>==巨型化，微型化，网络化，智能化==</p>
+<p>计算机根据计算能力分为巨型机、大型机、小型机、微型机。</p>
+<h5 id="计算机性能指标："><a href="#计算机性能指标：" class="headerlink" title="计算机性能指标："></a>计算机性能指标：</h5><p><strong>主频（时钟频率），字长，运算速度，内核数，内存容量</strong>，除此之外，还应该考虑系统兼容性，系统可靠性（MTBF），系统可维护性（MTTR）等。</p>
+<p>字长是衡量计算机性能的重要指标，字长越长，速度越快，精度越高</p>
+<p>运算速度的单位  <strong>MIPS</strong>(Million Instruction Per Second  每秒10^6^条指令   </p>
+<p>​                             <strong>BIPS</strong> (Billion  Instruction Per Second  每秒10^9^条指令 </p>
+<p>计算机存储的基本单位是字节<strong>B</strong>，一个字节由八位二进制位<strong>b</strong>组成。1B=8b,1KB=1024B,1MB=1024KB</p>
+<p>字是CPU一次存取加工和传递的数据，这一次传递数据的二进制位数也就称为字长，与CPU型号有关。</p>
+<p>科学计算时溢出，数值太大，CPU无法承受，超出机器所能表示的范围</p>
+<p>机器语言的每个语句称为指令，指令包含==操作码==和==地址码==。</p>
+<p>内存中的每一个存储单元序号称为==地址==</p>
+<p>计算机软件由<strong>程序＋文档</strong>组成</p>
+<p>语言处理程序：汇编程序、编译程序、解释程序</p>
+<p>编译程序产生目标程序，解释程序不产生目标程序   </p>
+<p>计算机算法具有<strong>可行性、有穷性、确定性、输入输出</strong></p>
+<h5 id="计算机硬件："><a href="#计算机硬件：" class="headerlink" title="计算机硬件："></a>计算机硬件：</h5><p>==ALU==算数逻辑单元</p>
+<p>运算器是对数据进行算数运算和逻辑运算的部件</p>
+<p>显示器分类：① CRT显示器（阴极射线管显示器）大头      ② LCD显示器（液晶显示器）    ③ 等离子显示器<br>分辨率的单位为像素<br>24位及以上称为真彩显示器</p>
+<p>主机：中央处理器CPU + 内存储器</p>
+<p>CPU与其它部件传输的数据就是通过总线</p>
+<p>总线分为数据总线，控制总线，地址总线（都是串行总线），并行总线大部分为有针脚的总线，例如VGA，PS/2</p>
+<p>主板的芯片组是主板的灵魂，分为南北桥，与主板所连接的部件不是全部需要插到插槽中才能进行工作，例如光驱和硬盘是通过数据线连接。</p>
+<p>CMOS芯片（电池） 储存时间，日期，磁盘参数与计算机配置信息</p>
+<p>磁盘属于存储设备，磁盘驱动器、磁带机属于输入输出设备。</p>
+<p>CD-ROM和DVD都是利用激光技术存储</p>
+<p>​                                                                                                                                                                                          </p>
+<h3 id="多媒体"><a href="#多媒体" class="headerlink" title="多媒体"></a>多媒体</h3><p><strong>特点：① 多样性  ② 实时性  ③ 交互性  ④ 集成性</strong></p>
+<p>多媒体技术的核心技术，数据压缩与编码技术</p>
+<p>流媒体数据的特点：<strong>① 连续性 ② 实时性 ③ 时序性</strong></p>
+<p>多媒体数据在计算机中最终以==二进制==形式存在</p>
+<p>超媒体就是<strong>超文本+多媒体</strong></p>
+<p>静态文件格式：BMP（位图，画图的默认格式），GIF（比较特殊，也可以支持动画），JPEG。</p>
+<p>声音、图像属于<strong>感觉媒体</strong></p>
+<p>VOD：视频点播</p>
+<p>AVI：音/视频交错格式</p>
+<p>MOV：苹果公司创立的视频格式</p>
+<p>WAV：音频文件</p>
+<p>MIDI：乐器数字接口</p>
+<p>MPEG：动态图像专家组，属于动态图像文件格式</p>
+<p>JPEG：联合图像专家组</p>
+<p>数码相机拍摄的图像绝对像素取决于==CCD==上光敏元件的数量</p>
+<p>色彩的三要素：色调（色相）、饱和度（纯度）、明度</p>
+<h3 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h3><p>功能：管理计算机的硬件设备，使应用软件高效的使用这些设备</p>
+<p>批处理操作系统是一种==非交互式==的操作系统</p>
+<p>Windows7不区分文件名的大小写，使用<strong>库</strong>来组织和访问文件，这些文件与存储位置无关</p>
+<h5 id="快捷键："><a href="#快捷键：" class="headerlink" title="快捷键："></a>快捷键：</h5><p><strong>Ctrl + 鼠标拖动，复制文件</strong></p>
+<p><strong>Alt + 鼠标拖动，创建相应的快捷方式</strong></p>
+<p>激活应用程序的文件菜单：<strong>Alt + F</strong></p>
+<p>全角半角切换：<strong>Shift + Space</strong></p>
+<p>中英文标点输入法的切换：*<em>Ctrl + . *</em></p>
+<p>Windows：<strong>Ctrl + Esc</strong></p>
+<p>任务栏的运行任务切换：<strong>Alt + Tab , Alt + Esc(按照窗口打开的顺序在不同的窗口切换)</strong></p>
+<p><strong>Windows有两个通配符：？和 *</strong></p>
+<ul>
+<li><p>？（问号）表示与一个任意字符相匹配</p>
+</li>
+<li><ul>
+<li>（星号）表示零个或多个任意字符匹配</li>
+</ul>
+</li>
+</ul>
+<p>回收站是硬盘上的一块特殊区域，只能存放相应硬盘的删除文件，像软盘、U盘不可以。其实每个盘符下面各有一个回收站，桌面上的回收站是所有回收站的总和，回收站可以改变其大小，但是不能被删除。</p>
+<p>剪贴板是内存上的一块区域</p>
+<p>画图、写字板程序是单文档应用程序</p>
+<p>Windows文件组织结构是一种<strong>树状结构</strong></p>
+<p>对话框分为模式对话框与非模式对话框，主程序窗口被禁止的对话框称为模式对话框</p>
+<p>窗口与对话框的区别是窗口有<strong>菜单栏</strong>对话框没有</p>
+<p>活动窗口是当前正在运行的窗口，与位置无关，非活动窗口不可以接受用户的键盘与鼠标输入等操作，只有活动窗口可以</p>
+<p>另存为后当前打开文件是另存为之后的文件</p>
+<h3 id="计算机网络"><a href="#计算机网络" class="headerlink" title="计算机网络"></a>计算机网络</h3><h5 id="功能："><a href="#功能：" class="headerlink" title="功能："></a>功能：</h5><p>① 数据通信  <strong>② 资源共享</strong> （最突出的特征） ③ 分布式处理  ④ 提高系统的可靠性</p>
+<p>计算机网络从<strong>逻辑功能</strong>分为：==通信子网和资源子网==，<strong>物理功能</strong>上分为==计算机系统，通信链路，网络节点==。</p>
+<p>计算机网络是==计算机技术和通信技术==结合的产物</p>
+<p>计算机网络资源分为==硬件资源、软件资源和数据资源==</p>
+<p>ping 命令测试两台计算机是否连通</p>
+<p>tracert 命令显示经过的路径上各个路由器信息</p>
+<p>Internet的前身是<strong>ARPANet</strong></p>
+<p>Internet服务提供商（Internet Service Provider）简称ISP</p>
+<p>Internet提供的网络服务有：BBS，Usenet，Telnet，网络聊天等</p>
+<p>Internet下载文件是FTP功能</p>
+<p>Internet相连的任一台计算机都称为Internet的主机                                                                                                       </p>
+<p>使用匿名FTP服务，用户登录时使用anonymous（陌生人）作为用户名，用Email地址作为密码。</p>
+<p>==网卡==工作在<strong>物理层、数据链路层</strong><br>功能：① 提供全球唯一的MAC地址，网卡的物理地址 ② 接收网络数据，转换为本机可识别的格式 ③ 将本机要传输的数据按照网络设备的格式上传到网络</p>
+<p>==中继器、集线器==工作在<strong>物理层</strong></p>
+<p>==网桥==工作在<strong>数据链路层</strong></p>
+<p>==交换机==工作在<strong>数据链路层</strong>，可以取代集线器和网桥</p>
+<p>==路由器==工作在<strong>网际层</strong>，路径选择，数据包的传送，网络设备互联的核心，用于实现不同类型网络的互联</p>
+<p>==网关==工作在<strong>传输层</strong>，称为协议转换器，连接不同网络</p>
+<p>==中继器==连接相同网络</p>
+<p>双绞线的最大传输距离是100m，如果要加大传输距离，需要在两段双绞线之间安装中继器，最多可以安装四个中继器，也就是传输距离加中继器后可为500米。</p>
+<p>防火墙是用于局域网（LAN）与广域网（WAN）之间的数据过滤</p>
+<p>LAN和WAN主要区别是通信距离与传输速率</p>
+<p><strong>一级域名 ：</strong>com  商业组织；edu 教育组织；gov 政府部门；mil 军事机构；net 网络服务器；org 非营利性组织</p>
+<p><strong>TCP/IP四个网络层次：</strong>应用层，传输层，网际层，网络层接口</p>
+<h5 id="IP地址："><a href="#IP地址：" class="headerlink" title="IP地址："></a>IP地址：</h5><p>也称为网际地址，一个IP可以对应多个域名，一个域名只能对应一个IP。</p>
+<p>二进制以0开头的是A类IP地址，以10开头的是B类IP地址，以110开头的是C类IP地址</p>
+<p><strong>A类 ： 1~126      127 作为回路、回访、以及诊断功能地址</strong><br><strong>B类 ：128~191</strong><br><strong>C类 ：192~223</strong><br><strong>D类 ：用于多点广播</strong><br><strong>E类 ：保留未用</strong></p>
+<p>由于C类前24位标识网络号，所以只有余下8位表示主机号，可表示2^8^，256个，根据Internet网络管理规定，主机号不能全为0或1，所以只能表示254个C类地址。</p>
+<p>子网掩码：判断任意两台计算机IP地址是否属于同一子网，用子网掩码与IP进行==与==运算，网络标准位全为“1”，主机标准位全为“0”</p>
+<p>URL 全球统一资源定位器，用于标识全球某个网络资源的唯一标志，是信息资源在网上业务类型和如何访问的统一的描述方法<br>格式为：协议名://主机域名或IP/路径名/文件名（<a href="https://www.tylt.xyz/index.jpg）" target="_blank" rel="noopener">https://www.tylt.xyz/index.jpg）</a></p>
+<h5 id="四大主干网络："><a href="#四大主干网络：" class="headerlink" title="四大主干网络："></a>四大主干网络：</h5><ol>
+<li>（ChinaNet）中国公用计算机互联网</li>
+<li>（CerNet）中国教育和科研计算机网</li>
+<li>（CSTNet）中国科技信息网</li>
+<li>（ChinaGBN）中国金桥信息网</li>
+</ol>
+<p>使用电话线上网：PSTV，ADSL，计算机系统中必须有调制解调器（Modem），网卡在拨号入网时不需要</p>
+<p>电子邮件相关的协议：POP接收电子邮件协议，SMTP发送电子邮件文本协议，MIME多媒体协议，若是同时发给多个收件人，各电子邮件的地址之间用逗号或分号隔开。</p>
+<p>数据通信中，计算机与终端之间相互交换信息的一套规则，称为<strong>通信协议</strong>。</p>
+<h3 id="计算机病毒"><a href="#计算机病毒" class="headerlink" title="计算机病毒"></a>计算机病毒</h3><p>可执行性，破坏性，传染性，潜伏性，针对性，衍生性，抗反病毒软件性</p>
+<p>类型：引导区病毒，文件型病毒，混合型病毒，宏病毒（worm蠕虫病毒）</p>
+<p>trojet，木马，人为设计的有破坏性的一组程序，具有隐蔽性</p>
+<p>木马不是病毒，木马程序不依附于任何载体而独立存在，病毒必须依附其它载体存在并具有感染性</p>
+<p>木马主要是窃取密码，包括两部分组成，控制器端和服务器端</p>
+<p>预防计算机病毒，从管理和技术两个方面进行</p>
+<h2 id="OFFICE"><a href="#OFFICE" class="headerlink" title="OFFICE"></a>OFFICE</h2><p>Word首次启动自动创建==文档1==</p>
+<p>Excel首次启动自动创建==工作簿1==</p>
+<p>Word最多按照<strong>3</strong>个字段/关键字排序，Excel最多按照<strong>64</strong>个字段、关键字排序</p>
+<p>最小化功能区：<strong>Ctrl+F1</strong></p>
+<h3 id="Word"><a href="#Word" class="headerlink" title="Word"></a>Word</h3><h5 id="快捷键：-1"><a href="#快捷键：-1" class="headerlink" title="快捷键："></a>快捷键：</h5><p>打开文件：<strong>Ctrl+O或Ctrl+F12</strong></p>
+<p>保存文件：<strong>Ctrl+S或Shift+F12</strong></p>
+<p>复制：<strong>按住Ctrl键拖动选定的文本或Ctrl+C</strong></p>
+<p>查找：<strong>Ctrl+F</strong></p>
+<p>替换：<strong>Ctrl+H</strong></p>
+<p>定位：<strong>Ctrl+G</strong></p>
+<p>分页：<strong>Ctrl+Enter</strong></p>
+<p>软回车：只换行不换段，<strong>Shift+Enter</strong></p>
+<p>选择矩形区域：<strong>Alt + 鼠标拖动</strong></p>
+<p>全选：<strong>在选定区按住Ctrl + 鼠标左键单击</strong></p>
+<p>选定一句：<strong>Ctrl+单击句中任意位置</strong></p>
+<p>选定整篇文档：<strong>Ctrl+5</strong></p>
+<p>使用软键盘 Home快速移动到行首，End快速移动到行末，Ctrl+Home快速移动到文档开头，Ctrl+End快速移动到文档末尾。</p>
+<p>Word的主要功能：1.文字编辑和格式化</p>
+<p>​                                2.图形图片图像的处理</p>
+<p>​                                3.表格处理</p>
+<p>​                                4.版本设计与打印</p>
+<h5 id="Word的五种视图："><a href="#Word的五种视图：" class="headerlink" title="Word的五种视图："></a>Word的五种视图：</h5><p><strong>页面视图、阅读版式视图、Web版式视图、大纲视图、草稿（普通视图）</strong></p>
+<p>Word的即点即输功能，只在页面视图和Web版式视图才能使用</p>
+<p>页面视图和草稿视图可以显示水平标尺</p>
+<p>草稿视图是适合文本编辑和录入的视图</p>
+<p>阅读版式视图可以显示图书的==分栏样式==</p>
+<p>页面视图只能看到==分页效果==，草稿视图可以看到==分页符==</p>
+<p>==页眉和页脚==只能在页面视图显示</p>
+<p>图文混排是在页面视图方式下实现的</p>
+<p>大纲视图用于显示文档标题的层级结构、<strong>长文档的浏览</strong>和设置</p>
+<p>对表格设置表格线的宽度选择开始中的==边框和底纹==</p>
+<p>对文档进行相应的编辑，打印等操作之前要进行==页面设置==</p>
+<h5 id="拼写和语法检查：F7"><a href="#拼写和语法检查：F7" class="headerlink" title="拼写和语法检查：F7"></a>拼写和语法检查：F7</h5><ol>
+<li><p>红色波浪线表示拼写错误或字库中无该字</p>
+</li>
+<li><p>绿色波浪线表示语法错误</p>
+</li>
+</ol>
+<p><strong>波浪线属于不可打印字符，不影响打印效果</strong></p>
+<p>首行缩进：段落中的第一行缩进一定值，只针对第一行有效</p>
+<p>悬挂缩进：段落中除了第一行外，其余所有行缩进一定值</p>
+<p>浮动式对象：可以放置到页面的任意位置，允许与其它对象组合，还可以与正文实现多种形式的环绕<br>嵌入式对象：只能放置到文档插入点的位置，不能与其它对象组合，可以与正文一起排版，不能实现环绕</p>
+<p>==段落==是指文档中两个回车符之间的全部字符</p>
+<p>按回车键产生一个段落标记符，位置在段落的尾部</p>
+<p>字号：两种表示方式 1. “号”，初号最大，八号最小 2.“镑”，5镑最小，72镑最大，自定义可到1638镑。</p>
+<p>Word具有自动分页功能，页满时会自动换页并插入一个软分页符（不可删除），除此外，还有硬分页符（人工分页符，可删除）</p>
+<p>​    ① 布局选项卡<br>​    ② 分隔符<br>​    ③ 点击分页符按钮</p>
+<h5 id="Word表格"><a href="#Word表格" class="headerlink" title="Word表格"></a>Word表格</h5><p>最多是63列、32767行</p>
+<p>Word表格<strong>既可以水平也可以垂直合并</strong>单元格，但是只能<strong>水平拆分</strong>单元格，在最后一行按==Tab==键增加一行</p>
+<p>插入列可选在上、下、左、右侧</p>
+<p>表格的计算功能是通过==公式==实现的</p>
+<p>在表格中全选后按Delete键删除的是内容，删除整个表格选中后按Backspace或表格工具—布局的删除表格</p>
+<p>设置表格的分页标题显示：点击布局选项卡中的重复标题行</p>
+<p>邮件合并：==主文档 + 数据源文件==，可制作大学的录取通知书，并不是邮件</p>
+<p>域：隐藏在文档中的一组特殊代码组成的命令</p>
+<p><strong>选定栏</strong>位于页面编辑区的左侧空白区域</p>
+<p>剪切板最多可保存24块剪切或复制的内容</p>
+<p>页眉页脚必须在不同窗口编辑</p>
+<p>替换功能可以实现格式的替换</p>
+<p>设置打印纸张的大小时，应使用页面布局中的页面设置命令来完成</p>
+<p>第一次保存文档出现的是另存为对话框</p>
+<p>确保一个文档中各个段落格式一致使用==样式==</p>
+<h3 id="Excel"><a href="#Excel" class="headerlink" title="Excel"></a>Excel</h3><h5 id="快捷键：-2"><a href="#快捷键：-2" class="headerlink" title="快捷键："></a>快捷键：</h5><p>在多个单元格输入相同信息：<strong>Ctrl+Enter</strong></p>
+<p>回车换行：<strong>Alt + Enter</strong></p>
+<p>在当前工作表之前新插入一个工作表：<strong>Shift+F11</strong></p>
+<p>将选定的单元格扩展到最后一个使用的单元格：<strong>Ctrl+Shift+End</strong></p>
+<p>下一行：<strong>Enter</strong></p>
+<p>下一列：<strong>Tab</strong></p>
+<p>隐藏选中行：<strong>Ctrl + 9</strong></p>
+<p>隐藏选中列：<strong>Ctrl + 0</strong></p>
+<h5 id="文本类型："><a href="#文本类型：" class="headerlink" title="文本类型："></a>文本类型：</h5><p>==默认左对齐==, 字母、汉字、数字、空格、其它字符.</p>
+<p>数字作为文本，在单元格输入*<em>英文半角单引号 ‘ *</em>后输入数字，字长的影响，计算机最多精确到15位，超过后都以0显示，身份证号，邮政编码，公式函数，以0开头的数据（数值型文本）</p>
+<h5 id="数字类型："><a href="#数字类型：" class="headerlink" title="数字类型："></a>数字类型：</h5><p>==默认右对齐==</p>
+<p><strong>, （逗号）是千位符，每三位加一个</strong></p>
+<p><strong>输入分数时先输入0和空格，否则会被认为日期型</strong></p>
+<p>数字长度超过11位就变为科学计数法</p>
+<p>计算时按照输入的数据为准，不考虑数据格式的四舍五入</p>
+<h5 id="日期和时间数据类型："><a href="#日期和时间数据类型：" class="headerlink" title="日期和时间数据类型："></a>日期和时间数据类型：</h5><p>==默认右对齐==，24小时制。输入十二小时制输入后加空格加AM或PM，表示上午或下午<br>① 输入当天日期：<strong>Ctrl + ;</strong><br>② 输入当前时间：<strong>Ctrl + Shift + ;</strong><br>③ 输入当前日期加时间：先 ① 输入空格 再<strong>Ctrl + Shift + :</strong></p>
+<p>公式输入时必须以 ===== 开头</p>
+<h5 id="单元格的引用："><a href="#单元格的引用：" class="headerlink" title="单元格的引用："></a>单元格的引用：</h5><p>​        相对引用：默认方式<br>​        绝对引用：==$==加在每一个行号和列号”= $A$1”<br>​        混合引用：只加一个$表示行绝对引用或列绝对引用</p>
+<p>相对引用、绝对引用、混合引用相互转化可以使用F4</p>
+<p>三维地址引用：格式   [工作簿]工作表名!单元格引用<br>例如<strong>[Book]Sheet!A3</strong>（表示Book工作簿的工作表的第三行第一列）</p>
+<h5 id="单元格公式运算符"><a href="#单元格公式运算符" class="headerlink" title="单元格公式运算符"></a>单元格公式运算符</h5><p><strong>算术运算符</strong></p>
+<p><strong>比较运算符</strong></p>
+<p><strong>文本运算符：&amp;</strong></p>
+<p><strong>引用运算符：</strong></p>
+<p>​    <strong>：（冒号）</strong>区域表示运算符<br>​        <strong>（空格）</strong>区域交集运算符<br>​    <strong>，（逗号）</strong>区域并集运算符</p>
+<p>工作簿（book）<strong>.xlsx</strong>   一个工作簿由255个工作表（sheet）组成，初始创建时会有三个工作表，2^14^列（16384列A-IV）,  2^20^行 （1048576行从1开始）。工作簿中至少存在1个工作表，并且是可视，不能全部隐藏。</p>
+<p>Excel单元格可以合并不可以拆分</p>
+<p>单元格合并包括==合并单元格、跨越合并、合并后居中==</p>
+<p>==跨越合并==指行与行之间的合并，上下单元格不参与</p>
+<p>当前单元格的地址显示在<strong>名称框</strong>，当前单元格的公式显示在<strong>编辑栏</strong></p>
+<p>Excel中的三种模拟分析工具：==方案管理器、模拟运算表、单变量求解==</p>
+<p>行高和列宽的调整：<strong>拖动鼠标调整；双击行或列的分割线可自动调整</strong></p>
+<p>Excel调整行高要移至行号分割线下端</p>
+<p>==选择性粘贴==可以实现数据部分特性的复制，可以把源格式的数值复制到目标单元格</p>
+<p>==数据清单==类似数据库的特点，具有二维表性质的，行表示记录，列表示字段，排序时单击数据清单当列任一单元格</p>
+<p>数据系列指==一行或一列单元格的数据==</p>
+<p>Excel两种筛选：<strong>自动筛选、高级筛选</strong></p>
+<p>只希望显示数据清单中的某个数据使用==自动筛选==功能</p>
+<p>高级筛选一次可以实现多个不同字段的组合条件和与或运算</p>
+<p>进行<strong>分类汇总</strong>前必须要先根据==分类字段==进行任意的==排序==</p>
+<p>==条件格式==可以根据不同的条件设置不同的格式</p>
+<p>==Delete键是“清除”，单元格本身还存在，只清除单元格内容==</p>
+<p>RANK(number,ref,order) number为排位的数字，ref是单元格区域，必须为绝对引用，order指明排序方式，0或缺省为降序，不为0则进行升序，对重复数排位相同，但会影响后续的数排序</p>
+<p>图表是单元格数据以图显示，图表是对单元格数据的<strong>绝对引用</strong>，改变时都会进行相应的改变<br>根据图表的位置根据图表的位置一种是==嵌入式图表==，在同一张工作表中，另一种==是独立图表==，图表的插入与编辑是使用的==OLE技术（链接与嵌入式技术）==</p>
+<p>函数中的参数可以是==常量，变量，单元格，区域，逻辑位，引用，错误值或其他函数==</p>
+<p>==数据有效性==是检验输入数据的格式，定义了可在单元格中输入哪些数据。</p>
+<p>数据透视表在==插入==选项卡中</p>
+<p>Excel打印预览前必须正确安装打印机驱动</p>
+<h3 id="PPT"><a href="#PPT" class="headerlink" title="PPT"></a>PPT</h3><h5 id="快捷键：-3"><a href="#快捷键：-3" class="headerlink" title="快捷键："></a>快捷键：</h5><p>第一张幻灯片开始放映：<strong>F5或幻灯片放映选项卡中的从头开始</strong></p>
+<p>当前幻灯片开始放映：<strong>Shift+F5或从当前幻灯片开始放映</strong></p>
+<p>插入一个新幻灯片：<strong>Ctrl + M</strong></p>
+<p>.pptx是文件类型</p>
+<p>.potx是模板类型</p>
+<p>.ppsx是幻灯片放映文件，可直接进行播放</p>
+<p><strong>打包</strong>可以在无ppt环境下播放也是<strong>打包成 .pptx</strong></p>
+<p><strong>视图：普通视图，幻灯片浏览视图，幻灯片放映视图</strong>，表示显示幻灯片方式</p>
+<p>幻灯片浏览视图多个排列，对排序，定时和整体构思等特别有用。</p>
+<p>幻灯片放映类型主要有<strong>演讲者放映，观众自行浏览，在展台浏览</strong></p>
+<p>控制演示文稿外观的重要手段：==模板、母版和配色方案==</p>
+<p>模板：设计模板和内容模板</p>
+<p><strong>母版</strong>：幻灯片母版、讲义母版、备注母版、还有一种特殊母版：标题母版</p>
+<p><strong>幻灯片母版</strong>分为标题幻灯片母版和普通幻灯片母版</p>
+<p>启动时不会自动创建新文档，创建演示文稿后，默认包含一张版式为==标题幻灯片==</p>
+<p>演示文稿中的每一个单页被称为幻灯片，是演示文稿的核心，其中每个对象所在的位置被称为版式，可以改变幻灯片的布局。</p>
+<p>超链接技术以及动作设置可以制作更好的交互功能，链接目标不能是某张幻灯片的某个对象</p>
+<p>控制幻灯片的播放顺序：==动作按钮==和==创建超链接==</p>
+<p>占位符不可被插入，Flash动画不可直接插入，需要flash组件</p>
+<p>排练计时用于自动放映</p>
+<p>动作设置启用某一个应用程序或宏，动画设置对页面上的文本或图片的动画进行设置，切换设置对幻灯片不同页面之间的切换效果进行设置。</p>
+<p>PPT背景格式设置方式有：==纯色填充，渐变填充，图案填充，图片或纹理填充==</p>
+<h3 id="Access"><a href="#Access" class="headerlink" title="Access"></a>Access</h3><p>扩展名 .accdb</p>
+<p>Access的六种数据库对象：<strong>表，查询，窗体，报表，宏，模块</strong><br><strong>数据表</strong>是数据库的最基本对象，是创建其它六种对象的基础</p>
+<p>==数据库==是长期存放在计算机内，有组织可表现为多种形式的可共享数据的集合。</p>
+<p>数据库系统用户包括<strong>数据库管理员、数据库设计员、应用程序员、终端用户</strong></p>
+<p><strong>数据库系统</strong>包含<strong>数据库</strong>和<strong>数据库管理系统</strong></p>
+<p>数据库管理系统：DBMS 是一组系统软件</p>
+<p>数据库管理系统的功能：① 数据定义（DDL）② 数据存取 ③ 数据库运行管理（DML）④ 数据库的建立和维护 ⑤ 数据库的传输</p>
+<p>数据库控制语言（DCL）</p>
+<h5 id="五种视图："><a href="#五种视图：" class="headerlink" title="五种视图："></a>五种视图：</h5><ul>
+<li>设计视图</li>
+<li>SQL视图</li>
+<li>数据表视图</li>
+<li>数据透视表视图</li>
+<li>数据透视图视图</li>
+</ul>
+<p><strong>选择：关系中满足条件的元组</strong></p>
+<p><strong>投影：从关系中挑出若干个属性列组成新的关系</strong></p>
+<p><strong>连接：==两个==关系的笛卡尔积中选取属性满足一定条件的元组</strong></p>
+<p>Access管理的关系是若干个二维表格，关系模型 = <strong>实体 + 联系</strong></p>
+<p>二维表形式显示的是==数据表视图==</p>
+<p>数据库的所有数据存储在表中，表的一行描述一个实体的一个实例，一列描述实体的一个特征或属性。</p>
+<p>属性是字段，元组是记录，==输入掩码==属性用于设置字段，文本框以及组合框的数据格式</p>
+<p>在关系中存在多个属性来标识唯一元组称为==候选码==</p>
+<p>关系数据库中元组的一个属性值叫做元组的一个==分量==</p>
+<p>查询分为四类：选择查询，参数查询，交叉表查询，操作查询</p>
+<p>==交叉表查询==用于显示某一个字段数据的统计值</p>
+<p>操作查询：更新查询，生成表查询，追加查询，删除查询</p>
+<p><strong>多表查询时必须先建立表间关系</strong></p>
+<p>Access定义了==12==种数据类型，主关键字具有<strong>唯一性</strong>且不能为空值。</p>
+<h5 id="字段命名规则："><a href="#字段命名规则：" class="headerlink" title="字段命名规则："></a>字段命名规则：</h5><p>​    ① 长度最多为64个字符<br>​    ② 可以包含字母、数字、空格以及特殊的字符（除   . ! ‘ [ ] 外  ）<br>​    ③ 不能以空格开头<br>​    ④ 不能包含控制字符（从0~31的ASCII值）</p>
+<p>==窗体==是数据库与用户交互的最好界面，<strong>表</strong>不是窗体的控件</p>
+<p>报表是用于打印的</p>
+<p>数值和文本可用于建立索引</p>
+<p>OLE对象类型的字段可以保存图片</p>
+<p>可选择字段的数据类型不包括索引和格式</p>
+<h2 id="我国计算机发展"><a href="#我国计算机发展" class="headerlink" title="我国计算机发展"></a>我国计算机发展</h2><p>1958年我国研制出第一台电子管计算机，1964年研制成功晶体管计算机，1971年研制成功集成电路计算机</p>
+<p>我国加入Internet的时间是1994年</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>计算机起源与发展历程</title>
+    <url>/2019/12/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%B5%B7%E6%BA%90%E4%B8%8E%E5%8F%91%E5%B1%95%E5%8E%86%E7%A8%8B/</url>
+    <content><![CDATA[<h2 id="计算机的起源"><a href="#计算机的起源" class="headerlink" title="计算机的起源"></a>计算机的起源</h2><p>看看计算机如何来的！</p>
+<a id="more"></a>
+
+<p>在原始社会中，人类开始使用结绳，垒石，枝条或刻字等方式进行辅助计算和计数的工具。</p>
+<p>在春秋时期，我们的祖先发明了算筹计数的 “ 筹算法 ” 。</p>
+<p>公元六世纪，中国开始使用算盘作为计算工具，算盘是我国人民独特的创造，是第一种彻底使用十进制计算的工具。</p>
+<p>由于人类一直在追求计算的速度与精度的提高 :</p>
+<blockquote>
+<p>1620年，欧洲的学者发明了对数计算尺。</p>
+</blockquote>
+<blockquote>
+<p>1642年，布莱斯·帕斯卡（Blaise Pascal）发明了机械计算机。</p>
+</blockquote>
+<blockquote>
+<p>1854年，英国数学家布尔（George Boole）提出符号逻辑思想。</p>
+</blockquote>
+<blockquote>
+<p>直到19世纪，英国数学家查尔斯·巴贝奇（Charles Babbage）提出通用数字计算机的基本设计思想，于1822年设计了一台差分机，并于1832年设计一种基于计算自动化的程序控制分析机，提出了几乎完整的计算机设计方案，被誉为计算机之父。</p>
+</blockquote>
+<p>差分机图片（感叹机械之美）</p>
+<img src="https://img-blog.csdnimg.cn/20191218164641395.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70" style="zoom: 60%;" />
+
+
+
+<h2 id="计算机的发展"><a href="#计算机的发展" class="headerlink" title="计算机的发展"></a>计算机的发展</h2><p>现代计算机就是从古老的计算工具一步步发展过来的，中间经历过的难易程度已经很少找到相关记载。</p>
+<p>到第一台真正意义上的电子计算机出现的时候已经到了20世纪中期。</p>
+<p>1946年，冯 · 诺依曼提出计算机的基本原理：存储程序和程序控制。</p>
+<pre><code>1. 由二进制代替十进制思想 
+
+2. 采用存储程序思想
+
+3. 从逻辑分为CPU(运算器，控制器)，存储器，输入设备，输出设备</code></pre><p>同年第一台计算机ENIAC (埃尼阿克(Electronic Numerical Integrator And Calculator)) 在美国宾夕法尼亚大学现世并正式投入运行，参与研制工作的是宾夕法尼亚大学莫尔电机工程学院的莫克莱和埃克特为首的研制小组。</p>
+<p>冯诺依曼并没有参加 ENIAC 的研制，而是在了解到 ENIAC 项目后，在其基础上带领 ENIAC 的原班人马研制了 EDVAC，重新设计了整个架构，从而奠定了当今所有计算机的结构，从而开始采用二进制进行运算。</p>
+<p>ENIAC重30吨，使用了约18800个真空电子管，功率达174千瓦，占地约140平方米，使用十进制运算，每秒能运算5000次加法，但是它不像现在这样的电脑有输入控制设备，只能通过人工来扳动庞大面板上的各种开关来进行数据信息输入，虽然现在看来它真的很落后，但是在当时它代表着人类计算技术的最高成就，它奠定了电子计算机的发展基础，开辟了信息时代。</p>
+<img src="https://img-blog.csdnimg.cn/20191218163756292.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70"/>
+
+
+
+<p>后来的日子里面，根据计算机电子器件分为了四个阶段</p>
+<ol>
+<li><p>1946~1957年    电子管    外存：磁鼓，磁带      机器语言、汇编语言   </p>
+</li>
+<li><p>1958~1964年    晶体管    内存：磁芯体         出现程序员</p>
+</li>
+<li><p>1965~1972年    半导体，小规模集成电路          半导体存储器</p>
+</li>
+<li><p>1972年至今      超大规模集成电路<br>————————————————<br>版权声明：本文为CSDN博主「天宇龙腾」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a href="https://blog.csdn.net/tylt6688/article/details/102784978" target="_blank" rel="noopener">https://blog.csdn.net/tylt6688/article/details/102784978</a></p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>计算机基础知识</category>
+      </categories>
+      <tags>
+        <tag>计算机基础知识</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>欢迎来到我的博客！</title>
+    <url>/2019/12/17/welcome/</url>
+    <content><![CDATA[<h3 id="Welcome-to-TYLT‘s-Blog’"><a href="#Welcome-to-TYLT‘s-Blog’" class="headerlink" title="Welcome to TYLT‘s Blog’!"></a>Welcome to <a href="https://www.tylt.xyz/" target="_blank" rel="noopener">TYLT</a>‘s Blog’!</h3><blockquote>
+<p>这是天宇龙腾出品的HEXO博客，大家有意向的话可以关注一下我的微信公众号《–天宇龙腾–》</p>
+</blockquote>
+<img src="https://www.tylt.xyz/wp-content/uploads/2019/11/IMG_337620191107-222054.jpg" alt="avatar" style="zoom:35%;align:center;" />]]></content>
+      <categories>
+        <category>公众号</category>
+      </categories>
+      <tags>
+        <tag>welcome</tag>
+        <tag>哈哈哈</tag>
+        <tag>嗯嗯嗯</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>学会使用电脑</title>
+    <url>/2019/12/17/%E5%AD%A6%E4%BC%9A%E4%BD%BF%E7%94%A8%E7%94%B5%E8%84%91/</url>
+    <content><![CDATA[<p>工欲善其事必先利其器</p>
+<p>这也是我为什么先写硬件以及系统的原因，只有身体棒，你才可以去做你想做的事情。其他一切都免谈！搞计算机的人，如果自己的枪都磨不好，你拿什么上战场呢？</p>
+<a id="more"></a> 
+
+<p>这句话，只说给经常用电脑的人，例如各位程序员以及像我这样还在路上的未来程序员。</p>
+<p>可能会有些人会说：我不必弄明白这些硬件，我只需要明白一些程序，算法，原理就好。首先第一件事，你要明白一点，你是个学计算机的，除了软件知识，硬件以及你的操作系统环境也要懂一些，这是学校里面老师教的，至于你怎么理解，就看你自己了。</p>
+<p>对于其他行业的人，现在电脑这么普遍，当作爱好以及装13的资本又何尝不好呢？例如帮小姐姐装一个系统，整一个软件，你可能就会收获一份成果。</p>
+<p>切入正题：<br>现在电脑几乎已经是“飞入寻常百姓家”，电脑的存在，方便了人们的生活，现在的生活环境几乎离不开电脑，打印，控制，编写，制作，电脑都会辅助或者主控这些流程，那么相应的问题也就来了，电脑系统卡慢，文件乱糟糟，磁盘空间变满，最要命的还不知道里面存储的是什么，怕删掉直接导致系统崩溃。</p>
+<p>现在来说一下解决的方案：<br>如果想好好的使用爱护你的电脑呢，我个人认为从买电脑开始就要对自己的电脑进行规划，现在针对市面流行最多的Windows系统电脑进行讨论。</p>
+<p>1.对于windows系统的电脑，首先要做的就是对自己的磁盘进行定额的分配与管理。</p>
+<p>2.电脑使用者大部分都知道，C盘是系统盘，是Windows系统文件的安装的位置，当然啦，C盘这块大肥肉也是各个软件的默认安装位置，所以在软件安装的时候，一定要仔细的看好安装位置，尽量不要选择C盘作为软件的安装目录，一是因为某些权限问题，其次就是因为防止文件过于冗余纷杂，很多的东西存在C盘的话呢，就会变得C盘容量变小，windows系统本身也会产生缓存，更新的话呢，也会产生一些很大的文件，可能会对你的电脑造成卡慢，因为承载的东西太多了嘛！具体的C盘理解的话，请自行寻找我博文的说明。</p>
+<p>软件安装过程还要看好是不是有其他捆绑软件进行了勾选，要不然来不及后悔，它就装上了，切记不要一股脑的点下一步。如果你只是分了一个盘的话，就当我没说，如果想改磁盘分区的话，重装进行重新分区，千万不要用什么搬家分配之类的软件，不知道原理是啥，反正不安全，数据丢失就几乎无法找回，而且根据我看其他人的情况来说，它会把你电脑弄得更加混乱。</p>
+<p>关于电脑磁盘的话，由于以前是机械硬盘，需要以恒定角速度（CAV）由外向内，由快到慢的进行数据读取，C盘分区在磁片的外圈，所以读取速率比较快，这也是许多软件都喜欢默认位置在C盘的原因，因为在C盘的话软件会快一点。现在几乎都会有固态硬盘，大可不考虑，博文中也会针对它做详解。</p>
+<p>3.所以呢，你在安装各种程序的时候，默认都在C盘，所以最好就是重新选择安装路径在其他的磁盘上。<br>说说我的习惯吧，我将我的磁盘分为三个分区，C.D.E盘。</p>
+<p>这是我的磁盘分区，C盘是120G固态，除了系统和必要没法选择路径的程序在里面，D,E是机械硬盘，分别存放程序与资料文件。个人觉得分很多盘不好，这样在里面进行文件夹分类就会很简洁。</p>
+<p>4.我安装程序时不管32/64位程序全部安装在D盘的Program File文件夹中，这也是根据C盘的安装目录来决定的，假设不选择路径的话，程序的默认安装路径就是C盘的Program File与Program File（x86）对应的就是64位程序与32位程序相应的文件主目录，其实也就是说程序的本体都在这里面对应的文件夹中，从其中找到主文件就可以启动，你在桌面上看到的图标都是些快捷方式，本质意义就是一些指针，指向里面的额主文件.exe程序。</p>
+<p>在D盘的Program File文件夹里面设置好各种安装程序的名字，一般选择后名字大部分都是对应程序英文的公司名，所以你查文件夹的名字一般就知道了它是哪个公司的哪个产品了。因为编译平台等各种原因，有些时候呢，中文或者很多的非法字符都是不允许存在于路径文件夹的，所以安装目录的文件夹最好就是全英文形式，建议全部是英文！（这里翻译工具会帮你，也便于英语的学习）。最后一个好处呢，就是当你卸载某个软件的时候，会有好多的插件很难清理，占用多余的空间，它们一般都会在这些程序的安装文件夹中，你卸载后来看一下相应的磁盘目录的程序安装文件夹是否还存在，存在的话你直接将其删除就好了。其实本质的话还会有好多的local残余，放在以后的博文中说明。</p>
+<p>最后看一下我的程序文件夹吧，这样一看是不是很清楚，哪个程序哪个文件夹，没有任何的冗余。</p>
+<p>最后总结一下，我个人认为，所有的东西，乃至万事万物都需要协调与秩序，秩序是维持标准的衡量尺，只有主动的去设定秩序，才会控制事物的发展规律，掌握轨迹达到控制。 </p>
+<p>————————————————<br>版权声明：本文为CSDN博主「天宇龙腾」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a href="https://blog.csdn.net/tylt6688/article/details/88809552" target="_blank" rel="noopener">https://blog.csdn.net/tylt6688/article/details/88809552</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Hexo博客搭建教程</title>
+    <url>/2019/12/10/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<p>相信每一位程序员都喜欢拥有一个属于自己的博客。</p>
+<p>当然，在我认为，内容以及模块都要自己进行可扩展定义才是真正属于自己的。</p>
+<p>那么想要一个博客就必须要有一个服务器和一个域名，这样的话才能让自己的博文内容发扬光大，但是服务器的性能以及费用是一个相当重要的问题，那么怎样才能免去服务器部分，只需要一个域名就能搭建一个能进入公网的、属于自己的博客呢？</p>
+<p>别着急，现在就让我来带领大伙来一步步搭建一个属于自己的静态博客。</p>
+<a id="more"></a>
+
+<p>搭建博客之前，需要各位小伙伴对编程知识有一定的了解，对服务器以及基本编程工具有初步的认知，现在先列一下搭建所需要的环境。</p>
+<blockquote>
+<ul>
+<li>一个属于自己的域名，可以在阿里云进行购买</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>Git工具及Github仓库</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>NodeJs环境</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>编辑器 例如：vscode editplus notepad++ 三选一即可</li>
+</ul>
+</blockquote>
+<p>那么接下来，就开始进行具体的操作步骤，关于以上工具的安装以及环境的配置在这里不做解释，如有需要可以进入我的博文进行找寻查看，或者去百度一下，确保环境准确无误后再进行具体操作，以避免不必要的麻烦。</p>
+<h2 id="①-打开GitHub，进行登录。"><a href="#①-打开GitHub，进行登录。" class="headerlink" title="① 打开GitHub，进行登录。"></a>① 打开GitHub，进行登录。</h2><p>创建一个以自己的GitHub昵称开头的一个仓库。<br>注意！一定要以自己在GitHub上的名称开头，因为这是你的唯一身份识别码，而且其官网也规定了一个用户只允许有一个这样的仓库。</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">例如我的仓库名就是：</span><br><span class="line"></span><br><span class="line">                         <span class="selector-tag">tylt</span><span class="selector-class">.github</span><span class="selector-class">.io</span></span><br><span class="line">                         </span><br><span class="line">1234</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img-blog.csdnimg.cn/20191211233509989.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70" alt="天宇龙腾出品"></p>
+<h2 id="②-进行域名的购买以及配置其解析设置。"><a href="#②-进行域名的购买以及配置其解析设置。" class="headerlink" title="② 进行域名的购买以及配置其解析设置。"></a>② 进行域名的购买以及配置其解析设置。</h2><p>在这里域名购买我是在阿里云进行购买的，当然也可以在其它地方购买，我为博客设置的是泛解析后的域名设置，记录类型为CNAME，指向的记录值就是自己的仓库名，一定要注意解析的类型以及记录值的地址是你设置的仓库名称地址，在这里也就是做了一次转移，使用自己的指定域名解析到了你的git仓库地址。<br><img src="https://img-blog.csdnimg.cn/20191211234645382.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70" alt="天宇龙腾出品"><br>配置完成后可进行域名测试，在浏览器地址栏输入你设置的域名，页面出现Github Pages的404页面证明解析正常。<br><img src="https://img-blog.csdnimg.cn/20191211235053605.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70" alt="天宇龙腾出品"></p>
+<blockquote>
+<ul>
+<li><a href="https://love.tylt.xyz/">love.tylt.xyz</a></li>
+</ul>
+<hr>
+<p>这是我已经搭好的，可以点进去看一下</p>
+</blockquote>
+<h2 id="③-进行GitHub仓库的配置。"><a href="#③-进行GitHub仓库的配置。" class="headerlink" title="③ 进行GitHub仓库的配置。"></a>③ 进行GitHub仓库的配置。</h2><p>再回到GitHub点开已经建好的仓库，点到Settings选项进行配置。。<br><img src="https://img-blog.csdnimg.cn/20191211234528884.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70" alt="天宇龙腾出品"><br>往下翻，直到看到Github Pages选项，进行填写先前在阿里云控制台配置的域名解析，进行保存。<br><img src="https://img-blog.csdnimg.cn/20191212000911639.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70" alt="天宇龙腾出品"><br><img src="https://img-blog.csdnimg.cn/20191211234546149.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70" alt="天宇龙腾出品"></p>
+<h2 id="④-进行Hexo博客的本地部署测试。"><a href="#④-进行Hexo博客的本地部署测试。" class="headerlink" title="④ 进行Hexo博客的本地部署测试。"></a>④ 进行Hexo博客的本地部署测试。</h2><p>到了这一步仓库以及域名的设置就完成了。</p>
+<p>接下来要进行的就是在自己的本地进行Hexo博客的搭建以及本地部署测试，其中有很多的坑，请大伙按照顺序认真进行操作。</p>
+<p>在本地新建一个文件夹，以英文进行命名，在文件夹内右键打开Git Bash Here。</p>
+<figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">需要执行的命令全称如下，图片内含有简写。</span><br><span class="line"></span><br><span class="line">npm install -g hexo</span><br><span class="line"></span><br><span class="line">hexo init</span><br><span class="line"></span><br><span class="line">npm install</span><br><span class="line"></span><br><span class="line">hexo server</span><br><span class="line">123456789</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img-blog.csdnimg.cn/20191211235815770.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70" alt="天宇龙腾出品"><br><img src="https://img-blog.csdnimg.cn/2019121200005871.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70" alt="天宇龙腾出品"><br><img src="https://img-blog.csdnimg.cn/2019121200041736.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70" alt="天宇龙腾出品"><br>输入地址后，看到出现下部页面也就是相当于在本地完成了部署，过程已经进行到了一半。<br><img src="https://img-blog.csdnimg.cn/20191212000700503.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70" alt="天宇龙腾出品"><br>在这里它默认使用的是4000端口，如果4000端口被占用，可指定端口进行启动。一般不出现错误可省略此步。</p>
+<figure class="highlight angelscript"><table><tr><td class="code"><pre><span class="line">hexo s -p <span class="number">5000</span> </span><br><span class="line"></span><br><span class="line">若端口被占用，指定<span class="number">5000</span>端口启动。</span><br></pre></td></tr></table></figure>
+
+<h2 id="⑤-从本地仓库上传到Github仓库。"><a href="#⑤-从本地仓库上传到Github仓库。" class="headerlink" title="⑤ 从本地仓库上传到Github仓库。"></a>⑤ 从本地仓库上传到Github仓库。</h2><p>使用编辑器打开本地仓库目录下的 <strong>_config.yml</strong> 文件进行修改。<br><img src="https://img-blog.csdnimg.cn/20191217120831919.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70" alt="天宇龙腾出品"><br>打开后到底部，找到deploy标签，修改或添加此三项，第二项为自己git仓库的git链，可使用ssh或https两种方式，复制过来就好。<br><img src="https://img-blog.csdnimg.cn/20191217121035241.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70" alt="天宇龙腾出品"></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">git@github.com:TYLT6688/tylt.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img-blog.csdnimg.cn/20191217121433158.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70" alt="天宇龙腾出品"><br>修改完成后不要忘记保存，接下来进行命令上传操作。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo deploy</span><br><span class="line"></span><br><span class="line">npm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img-blog.csdnimg.cn/20191217121903447.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70" alt="天宇龙腾出品"><br>安装完此模块后再进行 hexo d 命令即可。</p>
+<p>执行时如果使用的是ssh它会提示输入密码，如果是https会提示输入用户名，输入完成后才能进行完全上传。<br><img src="https://img-blog.csdnimg.cn/20191217122019767.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70" alt="天宇龙腾出品"></p>
+<p>此时查看GitHub仓库中是否已经上传成功，稍等一分钟后在浏览器地址栏输入自定义的域名进行查看是否出现自己的博客，如果出现就可以让小伙伴进行联网访问查看了，当然下次编辑修改时还会进行其他命令，在这里列一下，之后的配置以及美化，后期还会推出博文。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">编辑后清理之前的缓存</span><br><span class="line">hexo clean</span><br><span class="line"></span><br><span class="line">生成新的页面</span><br><span class="line">hexo generate</span><br><span class="line"></span><br><span class="line">生成完就可以进行上传了</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+
+<h3 id="最后希望大家可以去看一下我的博客哈，-love-tylt-xyz。"><a href="#最后希望大家可以去看一下我的博客哈，-love-tylt-xyz。" class="headerlink" title="最后希望大家可以去看一下我的博客哈， * love.tylt.xyz。"></a>最后希望大家可以去看一下我的博客哈， * <a href="https://love.tylt.xyz/">love.tylt.xyz</a>。</h3>]]></content>
+  </entry>
+</search>

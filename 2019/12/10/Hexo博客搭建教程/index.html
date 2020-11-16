@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+
+  <!-- 页面点击小红心 -->
+  <script type="text/javascript" src="../js/clicklove.js"></script>
+  
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/avatar.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/avatar.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/avatar.png">
+  <link rel="mask-icon" href="/images/avatar.png" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-mac-osx.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('https://love.tylt.xyz').hostname,
+    root: '/',
+    scheme: 'Mist',
+    version: '7.6.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":true},
+    copycode: {"enable":true,"show_result":true,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
+  <meta name="description" content="相信每一位程序员都喜欢拥有一个属于自己的博客。 当然，在我认为，内容以及模块都要自己进行可扩展定义才是真正属于自己的。 那么想要一个博客就必须要有一个服务器和一个域名，这样的话才能让自己的博文内容发扬光大，但是服务器的性能以及费用是一个相当重要的问题，那么怎样才能免去服务器部分，只需要一个域名就能搭建一个能进入公网的、属于自己的博客呢？ 别着急，现在就让我来带领大伙来一步步搭建一个属于自己的静态博">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo博客搭建教程">
+<meta property="og:url" content="https:&#x2F;&#x2F;love.tylt.xyz&#x2F;2019&#x2F;12&#x2F;10&#x2F;Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B&#x2F;index.html">
+<meta property="og:site_name" content="天宇龙腾的博客">
+<meta property="og:description" content="相信每一位程序员都喜欢拥有一个属于自己的博客。 当然，在我认为，内容以及模块都要自己进行可扩展定义才是真正属于自己的。 那么想要一个博客就必须要有一个服务器和一个域名，这样的话才能让自己的博文内容发扬光大，但是服务器的性能以及费用是一个相当重要的问题，那么怎样才能免去服务器部分，只需要一个域名就能搭建一个能进入公网的、属于自己的博客呢？ 别着急，现在就让我来带领大伙来一步步搭建一个属于自己的静态博">
+<meta property="og:image" content="https:&#x2F;&#x2F;img-blog.csdnimg.cn&#x2F;20191211233509989.png?x-oss-process&#x3D;image&#x2F;watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https:&#x2F;&#x2F;img-blog.csdnimg.cn&#x2F;20191211234645382.png?x-oss-process&#x3D;image&#x2F;watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https:&#x2F;&#x2F;img-blog.csdnimg.cn&#x2F;20191211235053605.png?x-oss-process&#x3D;image&#x2F;watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https:&#x2F;&#x2F;img-blog.csdnimg.cn&#x2F;20191211234528884.png?x-oss-process&#x3D;image&#x2F;watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https:&#x2F;&#x2F;img-blog.csdnimg.cn&#x2F;20191212000911639.png?x-oss-process&#x3D;image&#x2F;watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https:&#x2F;&#x2F;img-blog.csdnimg.cn&#x2F;20191211234546149.png?x-oss-process&#x3D;image&#x2F;watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https:&#x2F;&#x2F;img-blog.csdnimg.cn&#x2F;20191211235815770.png?x-oss-process&#x3D;image&#x2F;watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https:&#x2F;&#x2F;img-blog.csdnimg.cn&#x2F;2019121200005871.png?x-oss-process&#x3D;image&#x2F;watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https:&#x2F;&#x2F;img-blog.csdnimg.cn&#x2F;2019121200041736.png?x-oss-process&#x3D;image&#x2F;watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https:&#x2F;&#x2F;img-blog.csdnimg.cn&#x2F;20191212000700503.png?x-oss-process&#x3D;image&#x2F;watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https:&#x2F;&#x2F;img-blog.csdnimg.cn&#x2F;20191217120831919.png?x-oss-process&#x3D;image&#x2F;watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https:&#x2F;&#x2F;img-blog.csdnimg.cn&#x2F;20191217121035241.png?x-oss-process&#x3D;image&#x2F;watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https:&#x2F;&#x2F;img-blog.csdnimg.cn&#x2F;20191217121433158.png?x-oss-process&#x3D;image&#x2F;watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https:&#x2F;&#x2F;img-blog.csdnimg.cn&#x2F;20191217121903447.png?x-oss-process&#x3D;image&#x2F;watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https:&#x2F;&#x2F;img-blog.csdnimg.cn&#x2F;20191217122019767.png?x-oss-process&#x3D;image&#x2F;watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70">
+<meta property="article:published_time" content="2019-12-10T15:13:16.134Z">
+<meta property="article:modified_time" content="2020-02-07T05:42:10.797Z">
+<meta property="article:author" content="天宇龙腾">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;img-blog.csdnimg.cn&#x2F;20191211233509989.png?x-oss-process&#x3D;image&#x2F;watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70">
+
+<link rel="canonical" href="https://love.tylt.xyz/2019/12/10/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true
+  };
+</script>
+
+  <title>Hexo博客搭建教程 | 天宇龙腾的博客</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="天宇龙腾的博客" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">天宇龙腾的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">一条很闲的懒鱼🐟</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="搜索..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+  <a href="https://github.com/tylt6688" class="github-corner" title="去我的GitHub关注我！" aria-label="去我的GitHub关注我！" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://love.tylt.xyz/2019/12/10/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="天宇龙腾">
+      <meta itemprop="description" content="天宇龙腾出品">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="天宇龙腾的博客">
+    </span>
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">
+        Hexo博客搭建教程
+      </h1>
+
+      <div class="post-meta">
+
+        
+        <span class="post-meta-item">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-calendar-o"></i>
+          </span>
+          <span class="post-meta-item-text">发表于</span>
+
+          <time title="创建时间：2019-12-10 23:13:16" itemprop="dateCreated datePublished" datetime="2019-12-10T23:13:16+08:00">2019-12-10</time>
+        </span>
+        <span class="post-meta-item">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-calendar-check-o"></i>
+          </span>
+          <span class="post-meta-item-text">更新于</span>
+          <time title="修改时间：2020-02-07 13:42:10" itemprop="dateModified" datetime="2020-02-07T13:42:10+08:00">2020-02-07</time>
+        </span>
+
+        
+        <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+          </span>
+          <span class="post-meta-item-text">阅读次数：</span>
+          <span id="busuanzi_value_page_pv"></span>
+        </span><br>
+        <span class="post-meta-item" title="本文字数">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-file-word-o"></i>
+          </span>
+          <span class="post-meta-item-text">本文字数：</span>
+          <span>1.9k</span>
+        </span>
+        <span class="post-meta-item" title="阅读时长">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-clock-o"></i>
+          </span>
+          <span class="post-meta-item-text">阅读时长 &asymp;</span>
+          <span>3 分钟</span>
+        </span>
+
+      </div>
+    </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      <p>相信每一位程序员都喜欢拥有一个属于自己的博客。</p>
+<p>当然，在我认为，内容以及模块都要自己进行可扩展定义才是真正属于自己的。</p>
+<p>那么想要一个博客就必须要有一个服务器和一个域名，这样的话才能让自己的博文内容发扬光大，但是服务器的性能以及费用是一个相当重要的问题，那么怎样才能免去服务器部分，只需要一个域名就能搭建一个能进入公网的、属于自己的博客呢？</p>
+<p>别着急，现在就让我来带领大伙来一步步搭建一个属于自己的静态博客。</p>
+<a id="more"></a>
+
+<p>搭建博客之前，需要各位小伙伴对编程知识有一定的了解，对服务器以及基本编程工具有初步的认知，现在先列一下搭建所需要的环境。</p>
+<blockquote>
+<ul>
+<li>一个属于自己的域名，可以在阿里云进行购买</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>Git工具及Github仓库</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>NodeJs环境</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>编辑器 例如：vscode editplus notepad++ 三选一即可</li>
+</ul>
+</blockquote>
+<p>那么接下来，就开始进行具体的操作步骤，关于以上工具的安装以及环境的配置在这里不做解释，如有需要可以进入我的博文进行找寻查看，或者去百度一下，确保环境准确无误后再进行具体操作，以避免不必要的麻烦。</p>
+<h2 id="①-打开GitHub，进行登录。"><a href="#①-打开GitHub，进行登录。" class="headerlink" title="① 打开GitHub，进行登录。"></a>① 打开GitHub，进行登录。</h2><p>创建一个以自己的GitHub昵称开头的一个仓库。<br>注意！一定要以自己在GitHub上的名称开头，因为这是你的唯一身份识别码，而且其官网也规定了一个用户只允许有一个这样的仓库。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">例如我的仓库名就是：</span><br><span class="line"></span><br><span class="line">                         <span class="selector-tag">tylt</span><span class="selector-class">.github</span><span class="selector-class">.io</span></span><br><span class="line">                         </span><br><span class="line">1234</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img-blog.csdnimg.cn/20191211233509989.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70" alt="天宇龙腾出品"></p>
+<h2 id="②-进行域名的购买以及配置其解析设置。"><a href="#②-进行域名的购买以及配置其解析设置。" class="headerlink" title="② 进行域名的购买以及配置其解析设置。"></a>② 进行域名的购买以及配置其解析设置。</h2><p>在这里域名购买我是在阿里云进行购买的，当然也可以在其它地方购买，我为博客设置的是泛解析后的域名设置，记录类型为CNAME，指向的记录值就是自己的仓库名，一定要注意解析的类型以及记录值的地址是你设置的仓库名称地址，在这里也就是做了一次转移，使用自己的指定域名解析到了你的git仓库地址。<br><img src="https://img-blog.csdnimg.cn/20191211234645382.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70" alt="天宇龙腾出品"><br>配置完成后可进行域名测试，在浏览器地址栏输入你设置的域名，页面出现Github Pages的404页面证明解析正常。<br><img src="https://img-blog.csdnimg.cn/20191211235053605.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70" alt="天宇龙腾出品"></p>
+<blockquote>
+<ul>
+<li><a href="https://love.tylt.xyz/">love.tylt.xyz</a></li>
+</ul>
+<hr>
+<p>这是我已经搭好的，可以点进去看一下</p>
+</blockquote>
+<h2 id="③-进行GitHub仓库的配置。"><a href="#③-进行GitHub仓库的配置。" class="headerlink" title="③ 进行GitHub仓库的配置。"></a>③ 进行GitHub仓库的配置。</h2><p>再回到GitHub点开已经建好的仓库，点到Settings选项进行配置。。<br><img src="https://img-blog.csdnimg.cn/20191211234528884.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70" alt="天宇龙腾出品"><br>往下翻，直到看到Github Pages选项，进行填写先前在阿里云控制台配置的域名解析，进行保存。<br><img src="https://img-blog.csdnimg.cn/20191212000911639.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70" alt="天宇龙腾出品"><br><img src="https://img-blog.csdnimg.cn/20191211234546149.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70" alt="天宇龙腾出品"></p>
+<h2 id="④-进行Hexo博客的本地部署测试。"><a href="#④-进行Hexo博客的本地部署测试。" class="headerlink" title="④ 进行Hexo博客的本地部署测试。"></a>④ 进行Hexo博客的本地部署测试。</h2><p>到了这一步仓库以及域名的设置就完成了。</p>
+<p>接下来要进行的就是在自己的本地进行Hexo博客的搭建以及本地部署测试，其中有很多的坑，请大伙按照顺序认真进行操作。</p>
+<p>在本地新建一个文件夹，以英文进行命名，在文件夹内右键打开Git Bash Here。</p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">需要执行的命令全称如下，图片内含有简写。</span><br><span class="line"></span><br><span class="line">npm install -g hexo</span><br><span class="line"></span><br><span class="line">hexo init</span><br><span class="line"></span><br><span class="line">npm install</span><br><span class="line"></span><br><span class="line">hexo server</span><br><span class="line">123456789</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img-blog.csdnimg.cn/20191211235815770.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70" alt="天宇龙腾出品"><br><img src="https://img-blog.csdnimg.cn/2019121200005871.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70" alt="天宇龙腾出品"><br><img src="https://img-blog.csdnimg.cn/2019121200041736.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70" alt="天宇龙腾出品"><br>输入地址后，看到出现下部页面也就是相当于在本地完成了部署，过程已经进行到了一半。<br><img src="https://img-blog.csdnimg.cn/20191212000700503.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70" alt="天宇龙腾出品"><br>在这里它默认使用的是4000端口，如果4000端口被占用，可指定端口进行启动。一般不出现错误可省略此步。</p>
+<figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo s -p <span class="number">5000</span> </span><br><span class="line"></span><br><span class="line">若端口被占用，指定<span class="number">5000</span>端口启动。</span><br></pre></td></tr></table></figure>
+
+<h2 id="⑤-从本地仓库上传到Github仓库。"><a href="#⑤-从本地仓库上传到Github仓库。" class="headerlink" title="⑤ 从本地仓库上传到Github仓库。"></a>⑤ 从本地仓库上传到Github仓库。</h2><p>使用编辑器打开本地仓库目录下的 <strong>_config.yml</strong> 文件进行修改。<br><img src="https://img-blog.csdnimg.cn/20191217120831919.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70" alt="天宇龙腾出品"><br>打开后到底部，找到deploy标签，修改或添加此三项，第二项为自己git仓库的git链，可使用ssh或https两种方式，复制过来就好。<br><img src="https://img-blog.csdnimg.cn/20191217121035241.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70" alt="天宇龙腾出品"></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">git@github.com:TYLT6688/tylt.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img-blog.csdnimg.cn/20191217121433158.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70" alt="天宇龙腾出品"><br>修改完成后不要忘记保存，接下来进行命令上传操作。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br><span class="line"></span><br><span class="line">npm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img-blog.csdnimg.cn/20191217121903447.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70" alt="天宇龙腾出品"><br>安装完此模块后再进行 hexo d 命令即可。</p>
+<p>执行时如果使用的是ssh它会提示输入密码，如果是https会提示输入用户名，输入完成后才能进行完全上传。<br><img src="https://img-blog.csdnimg.cn/20191217122019767.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R5bHQ2Njg4,size_16,color_FFFFFF,t_70" alt="天宇龙腾出品"></p>
+<p>此时查看GitHub仓库中是否已经上传成功，稍等一分钟后在浏览器地址栏输入自定义的域名进行查看是否出现自己的博客，如果出现就可以让小伙伴进行联网访问查看了，当然下次编辑修改时还会进行其他命令，在这里列一下，之后的配置以及美化，后期还会推出博文。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">编辑后清理之前的缓存</span><br><span class="line">hexo clean</span><br><span class="line"></span><br><span class="line">生成新的页面</span><br><span class="line">hexo generate</span><br><span class="line"></span><br><span class="line">生成完就可以进行上传了</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+
+<h3 id="最后希望大家可以去看一下我的博客哈，-love-tylt-xyz。"><a href="#最后希望大家可以去看一下我的博客哈，-love-tylt-xyz。" class="headerlink" title="最后希望大家可以去看一下我的博客哈， * love.tylt.xyz。"></a>最后希望大家可以去看一下我的博客哈， * <a href="https://love.tylt.xyz/">love.tylt.xyz</a>。</h3>
+    </div>
+
+    
+    
+    
+
+    <div>
+      
+
+      <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+
+
+      
+    </div>
+    <div class="reward-container">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="https://tylt6688.coding.net/p/PictureBed/d/PictureBed/git/raw/master/%E5%BE%AE%E4%BF%A1%E8%B5%9E%E8%B5%8F%E7%A0%81.JPG" alt="天宇龙腾 微信支付">
+        <p>微信支付</p>
+      </div>
+
+  </div>
+</div>
+
+
+
+
+    <footer class="post-footer">
+
+      
+
+
+      
+    <div class="post-nav">
+      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2019/12/17/%E5%AD%A6%E4%BC%9A%E4%BD%BF%E7%94%A8%E7%94%B5%E8%84%91/" rel="next" title="学会使用电脑">
+      学会使用电脑 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+    </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#①-打开GitHub，进行登录。"><span class="nav-number">1.</span> <span class="nav-text">① 打开GitHub，进行登录。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#②-进行域名的购买以及配置其解析设置。"><span class="nav-number">2.</span> <span class="nav-text">② 进行域名的购买以及配置其解析设置。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#③-进行GitHub仓库的配置。"><span class="nav-number">3.</span> <span class="nav-text">③ 进行GitHub仓库的配置。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#④-进行Hexo博客的本地部署测试。"><span class="nav-number">4.</span> <span class="nav-text">④ 进行Hexo博客的本地部署测试。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#⑤-从本地仓库上传到Github仓库。"><span class="nav-number">5.</span> <span class="nav-text">⑤ 从本地仓库上传到Github仓库。</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#最后希望大家可以去看一下我的博客哈，-love-tylt-xyz。"><span class="nav-number">5.1.</span> <span class="nav-text">最后希望大家可以去看一下我的博客哈， * love.tylt.xyz。</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="天宇龙腾"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">天宇龙腾</p>
+  <div class="site-description" itemprop="description">天宇龙腾出品</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/tylt6688" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;tylt6688" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:2584896007@qq.com" title="E-Mail → mailto:2584896007@qq.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://blog.csdn.net/tylt6688" title="CSDN → https:&#x2F;&#x2F;blog.csdn.net&#x2F;tylt6688" rel="noopener" target="_blank"><i class="fa fa-fw fa-pie-chart"></i>CSDN</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-fw fa-rss"></i>RSS</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title">
+      <i class="fa fa-fw fa-link"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://www.tylt.xyz/" title="https:&#x2F;&#x2F;www.tylt.xyz" rel="noopener" target="_blank">我的另一个博客</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://blog.tylt.xyz/" title="https:&#x2F;&#x2F;blog.tylt.xyz" rel="noopener" target="_blank">我还有一个博客</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+  <div class="beian">
+      <img src="http://www.beian.gov.cn/portal/download" style="display: inline-block;"> &nbsp;&nbsp;<a href="http://www.beian.miit.gov.cn/" rel="noopener" target="_blank">本网站已进行ICP备案 </a>
+  </div>
+
+<div class="copyright">
+  
+  &copy; 2019 – 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">天宇龙腾</span>
+</div>
+
+<!-- 网站运行时间的设置 -->
+<span id="timeDate">载入天数...</span>
+<span id="times">载入时分秒...</span>
+<script>
+    var now = new Date();
+    function createtime() {
+        var grt= new Date("12/12/2019 13:14:00");//此处修改你的建站时间或者网站上线时间
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+        document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 ";
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+    }
+setInterval("createtime()",250);
+</script>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+      您是第
+        <span id="busuanzi_value_site_uv"></span>
+        位访客
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+      历经
+        <span id="busuanzi_value_site_pv"></span>
+      次回眸与您相遇
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  
+  <script color='0,0,100' opacity='0.5' zIndex='-1' count='110' src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false});</script><script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>
