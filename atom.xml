@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://love.tylt.xyz/"/>
-  <updated>2021-04-30T16:07:25.028Z</updated>
+  <updated>2021-05-31T14:10:25.431Z</updated>
   <id>https://love.tylt.xyz/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>题目</title>
+    <link href="https://love.tylt.xyz/2021/05/31/%E6%96%87%E7%AB%A0%E6%A8%A1%E6%9D%BF/"/>
+    <id>https://love.tylt.xyz/2021/05/31/%E6%96%87%E7%AB%A0%E6%A8%A1%E6%9D%BF/</id>
+    <published>2021-05-31T14:08:20.805Z</published>
+    <updated>2021-05-31T14:10:25.431Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="区块链"><a href="#区块链" class="headerlink" title="区块链"></a>区块链</h1><h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><h2 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h2><a id="more"></a>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;区块链&quot;&gt;&lt;a href=&quot;#区块链&quot; class=&quot;headerlink&quot; title=&quot;区块链&quot;&gt;&lt;/a&gt;区块链&lt;/h1&gt;&lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;h2 id=&quot;概要&quot;&gt;&lt;a href=&quot;#概要&quot; class=&quot;headerlink&quot; title=&quot;概要&quot;&gt;&lt;/a&gt;概要&lt;/h2&gt;
+    
+    </summary>
+    
+    
+      <category term="目录" scheme="https://love.tylt.xyz/categories/%E7%9B%AE%E5%BD%95/"/>
+    
+    
+      <category term="标签" scheme="https://love.tylt.xyz/tags/%E6%A0%87%E7%AD%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>区块链</title>
+    <link href="https://love.tylt.xyz/2021/05/31/%E5%8C%BA%E5%9D%97%E9%93%BE/"/>
+    <id>https://love.tylt.xyz/2021/05/31/%E5%8C%BA%E5%9D%97%E9%93%BE/</id>
+    <published>2021-05-31T14:05:16.085Z</published>
+    <updated>2021-05-31T14:08:44.095Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="区块链"><a href="#区块链" class="headerlink" title="区块链"></a>区块链</h1><a id="more"></a><h2 id="两大要素"><a href="#两大要素" class="headerlink" title="两大要素"></a>两大要素</h2><ol><li>分布式账本</li><li>去中心化网络</li></ol><h2 id="挖矿"><a href="#挖矿" class="headerlink" title="挖矿"></a>挖矿</h2><p>用手中的资源进行相应的计算，在区块链的链条上产生新的数据块，争夺记账权，获得虚拟货币的奖励</p><p>比特币靠算力（应用）</p><p>以太坊Ethereum抢显卡（应用商店）</p><p>利用分散CDN（闲置空间）</p><p>主链（ICO）—&gt; 以太坊—&gt;多个侧链（候选节点）</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;区块链&quot;&gt;&lt;a href=&quot;#区块链&quot; class=&quot;headerlink&quot; title=&quot;区块链&quot;&gt;&lt;/a&gt;区块链&lt;/h1&gt;
+    
+    </summary>
+    
+    
+      <category term="区块链" scheme="https://love.tylt.xyz/categories/%E5%8C%BA%E5%9D%97%E9%93%BE/"/>
+    
+    
+      <category term="区块链" scheme="https://love.tylt.xyz/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/"/>
+    
+  </entry>
   
   <entry>
     <title>股票术语</title>
